@@ -190,6 +190,7 @@ h4 {
   border-radius: 3rem;
   border: none;
   padding: 1rem 2rem;
+  margin-right: 2rem;
 }
 .form_button {
   outline: none;
@@ -198,10 +199,55 @@ h4 {
   border-radius: 2rem;
   background-color: hsl(176, 68%, 64%);
   border: none;
+  cursor: pointer;
 }
 
 /* FOOTER */
 .footer {
-  height: 50vh;
+  padding: 5rem;
   background-color: hsl(216, 53%, 9%);
+}
+.footer_logo {
+  margin-top: 5rem;
+  width: 10%;
+}
+.footer_boxes {
+  padding: 5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  justify-items: start;
+  gap: 3rem;
+}
+
+.location_box {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  column-gap: 2rem;
+}
+
+.footer_contact {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  column-gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+ul {
+  list-style: none;
+}
+li {
+  cursor: pointer;
+}
+ul a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer_awesome {
+  font-size: 2rem;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+.footer_awesome:hover {
+  color: hsl(176, 68%, 64%);
 }
