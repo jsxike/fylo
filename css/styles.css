@@ -1,0 +1,207 @@
+/* DEFUALT  */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: hsl(217, 28%, 15%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+::selection {
+  background-color: #000;
+  color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* HEADER */
+.header_box {
+  position: relative;
+}
+.header {
+  display: flex;
+  align-items: center;
+  padding: 3rem;
+}
+.header_logo {
+  height: 3rem;
+  margin-right: auto;
+}
+.header_link {
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 2rem;
+  color: inherit;
+}
+.header_curvy {
+  position: absolute;
+  bottom: -25rem;
+  left: 0;
+  height: 50%;
+  width: 100%;
+  z-index: -100;
+}
+.header_text-box {
+  text-align: center;
+  z-index: 300;
+}
+
+.header_text {
+  margin: 2rem auto;
+
+  font-size: 2rem;
+  width: 60%;
+}
+.header_png {
+  width: 60%;
+}
+.header_paragraph {
+  margin: 2rem auto;
+  font-size: 1.5rem;
+  width: 60%;
+}
+.header_button {
+  margin-top: 2rem;
+  text-decoration: none;
+  background-color: hsl(176, 68%, 64%);
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+}
+
+/* USES */
+.section_uses {
+  margin-top: 20rem;
+  padding-left: 30rem;
+  padding-right: 30rem;
+  background-color: hsl(218, 28%, 13%);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 3rem;
+}
+.uses {
+  text-align: center;
+}
+.uses_head {
+  font-size: 2rem;
+}
+
+/* PRODUCTIVE */
+
+.section_productive {
+  padding: 5rem;
+  background-color: hsl(218, 28%, 13%);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 5rem;
+  align-items: center;
+  justify-items: center;
+}
+.productive_png {
+  width: 80%;
+}
+.productive_box {
+  width: 70%;
+}
+.productive_button {
+  display: inline-block;
+  margin-top: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid hsl(176, 68%, 64%);
+}
+.productive_button-box {
+  display: flex;
+  align-items: center;
+}
+.productive_link {
+  color: hsl(176, 68%, 64%);
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+/* REVIEWS */
+.section_reviews {
+  background-color: hsl(218, 28%, 13%);
+}
+.review_box {
+  position: relative;
+  padding: 10rem;
+  background-color: hsl(218, 28%, 13%);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2rem;
+}
+.review_box::before {
+  content: url('../images/bg-quotes.png');
+  position: absolute;
+  top: 6rem;
+  left: 6rem;
+}
+.review {
+  padding: 3rem;
+  background-color: hsl(219, 30%, 18%);
+}
+.review_text {
+  padding-bottom: 2rem;
+}
+.review_user {
+  display: flex;
+  align-items: center;
+}
+.review_photo {
+  margin-right: 2rem;
+  width: 5rem;
+  border-radius: 50%;
+}
+.form {
+  width: 50%;
+  padding: 5rem;
+  text-align: center;
+  background-color: hsl(218, 28%, 13%);
+  margin: 0 auto;
+  box-shadow: 2rem 2rem 6rem rgba(0, 0, 0, 0.2);
+  z-index: 3;
+  transform: translateY(5rem);
+}
+.form_paragraph {
+  margin-bottom: 2rem;
+}
+.form_input {
+  width: 50%;
+  font-family: inherit;
+  font-size: 1.5rem;
+  border-radius: 3rem;
+  border: none;
+  padding: 1rem 2rem;
+}
+.form_button {
+  outline: none;
+  color: inherit;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  background-color: hsl(176, 68%, 64%);
+  border: none;
+}
+
+/* FOOTER */
+.footer {
+  height: 50vh;
+  background-color: hsl(216, 53%, 9%);
+}
