@@ -89,8 +89,7 @@ h4 {
 /* USES */
 .section_uses {
   margin-top: 20rem;
-  padding-left: 30rem;
-  padding-right: 30rem;
+  padding: 10rem;
   background-color: hsl(218, 28%, 13%);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -115,7 +114,7 @@ h4 {
   justify-items: center;
 }
 .productive_png {
-  width: 80%;
+  width: 90%;
 }
 .productive_box {
   width: 70%;
@@ -250,4 +249,71 @@ ul a {
 }
 .footer_awesome:hover {
   color: hsl(176, 68%, 64%);
+}
+
+/* $bp-largest: 75em; //1200px
+$bp-large: 62.5em; //1000px
+$bp-medium: 50em; // 800px
+$bp-small: 37.5em; // 600px
+$bp-smallest: 25em; // 400px */
+
+@media only screen and (max-width: 1000px) {
+  html {
+    box-sizing: border-box;
+    font-size: 55%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .header_link {
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: inherit;
+  }
+  .header_button {
+    padding: 1.5rem 7rem;
+    font-size: 2rem;
+  }
+  .header_curvy {
+    height: 80%;
+  }
+  .productive_png {
+    width: 100%;
+  }
+  .form {
+    width: 80%;
+    transform: translateY(50%);
+  }
+  .form_input {
+    width: 80%;
+    font-family: inherit;
+    font-size: 1.5rem;
+    border-radius: 3rem;
+    border: none;
+    padding: 2rem 3rem;
+    margin-bottom: 2rem;
+  }
+  .form_button {
+    width: 80%;
+    padding: 2rem 3rem;
+    outline: none;
+    color: inherit;
+    border-radius: 2rem;
+    background-color: hsl(176, 68%, 64%);
+    border: none;
+    cursor: pointer;
+  }
+
+  .footer {
+    padding-top: 15rem;
+    font-size: 1.5rem;
+  }
+  .footer_logo {
+    width: 30%;
+  }
+
+  .footer_box:last-of-type {
+    justify-self: center;
+    margin-top: 10rem;
+  }
 }
