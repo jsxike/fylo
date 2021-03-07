@@ -79,6 +79,7 @@ h4 {
   width: 60%;
 }
 .header_button {
+  color: inherit;
   margin-top: 2rem;
   text-decoration: none;
   background-color: hsl(176, 68%, 64%);
@@ -248,6 +249,15 @@ ul a {
   cursor: pointer;
 }
 .footer_awesome:hover {
+  color: hsl(176, 68%, 64%);
+}
+
+.designed_by {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.designer_name {
   color: hsl(176, 68%, 64%);
 }
 
